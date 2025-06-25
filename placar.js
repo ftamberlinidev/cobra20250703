@@ -4,7 +4,7 @@ const placar = {
     corFundo:"blue",
     corTexto:"white",
     pontuacao:0,
-    nomeJogo:"IFRJ Cobra",
+    nomeJogo:"Snake Game",
     desenhar(){
         ctx.fillStyle = this.corFundo;
         ctx.fillRect(0,0,this.largura,this.altura);
@@ -17,6 +17,6 @@ const placar = {
         ctx.font="14px Fantasy"
         ctx.fillText(this.pontuacao+ " ponto(s)",10,3*this.altura/4);
         ctx.textAlign="right";
-        ctx.fillText(" vida(s)",this.largura-10,3*this.altura/4);
+        ctx.fillText(cobra.vida + " vida(s)",this.largura-10,3*this.altura/4);
     }
 }
