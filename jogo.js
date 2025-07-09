@@ -1,5 +1,6 @@
 function inicioJogo(){
     placar.nomeJogo="Jogo da Cobra"
+    placar.pontuacao=0;
     cobra.vida=3;
     cobra.cor="white";
     cobra.velocidade=2;
