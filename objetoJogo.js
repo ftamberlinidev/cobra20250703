@@ -8,10 +8,8 @@ class ObjetoJogo{
         if (args.length >= 3)  this.y = args[2];          
    }
    teveColisao(obj){
-        const distX = this.x - obj.x;
-        const distY = this.y - obj.y;
-        console.log(distX);
-        console.log(distY);
+        const distX = this.x - obj.x[0];
+        const distY = this.y - obj.y[0];
         if (((distX >= 0) && (Math.abs(distX) < obj.tamanho) 
              ||(distX < 0) && (Math.abs(distX) < this.tamanho))
             &&
